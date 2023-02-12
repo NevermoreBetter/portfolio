@@ -1,0 +1,263 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    margin-top: 1rem;
+  }
+  .nav__btn {
+    padding: 10px;
+    font-size: 1.3rem;
+    border-radius: 100%;
+    transition: all 300ms;
+  }
+  .nav__btn:hover {
+    background-color: #242424;
+  }
+
+  .nav__btn.active {
+    background-color: #242424;
+  }
+
+  .about__btn {
+    border: solid 1px #535bf2;
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+  }
+
+  .me-item {
+    border: 1px solid #535bf2;
+    width: 8rem;
+    padding: 1rem 2rem;
+    border-radius: 100%;
+    background: #535bf2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 300ms;
+  }
+
+  .me-item:hover {
+    background: transparent;
+  }
+
+  .exp-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+  }
+
+  .me {
+    background: linear-gradient(#646cff, transparent);
+    border-top-right-radius: 17rem;
+    border-top-left-radius: 17rem;
+    padding: 1rem 0;
+  }
+
+  .about__me__image {
+    background: linear-gradient(45deg, transparent, #646cff, transparent);
+  }
+
+  .experience__content {
+    border: 1px solid #535bf2;
+    background: #535bf2;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    transition: all 300ms;
+  }
+
+  .experience__content .icon {
+    transition: all 300ms;
+  }
+
+  .experience__content:hover .icon {
+    color: #535bf2;
+  }
+
+  .experience__content:hover {
+    background: transparent;
+  }
+
+  .experience__content > article {
+    width: 8rem;
+  }
+
+  .portfolio__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #535bf2;
+
+    border-radius: 20px;
+  }
+
+  .portfolio__item-image {
+    margin-bottom: 1rem;
+  }
+
+  .portfolio__item-image img {
+    border-radius: 20px;
+  }
+
+  .portfolio-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.3rem;
+    gap: 1rem;
+  }
+
+  .git,
+  .demo,
+  .contact-btn {
+    color: #1a1a1a;
+    border: 1px solid #242424;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    color: #f9f9f9 !important;
+    background: #242424;
+    transition: all 300ms;
+  }
+
+  .git:hover,
+  .demo:hover,
+  .contact-btn:hover {
+    background: transparent;
+    color: #242424 !important;
+  }
+
+  .contact__option {
+    background: #535bf2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 3rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+  }
+
+  .contact-input {
+    background: transparent;
+    border: 1px solid #535bf2;
+    outline: none;
+    resize: none;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+h5 {
+  margin-bottom: 1rem;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+section {
+  margin-top: 5rem;
+}
+
+.swiper-slide {
+  display: flex;
+  height: 19rem;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper {
+    width: 15rem;
+    height: initial;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__item-image {
+    width: 50%;
+  }
+  .portfolio__item {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .portfolio__item-image {
+    width: 100%;
+  }
+  .portfolio__item {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 0;
+  }
+
+  .swiper-slide {
+    height: 30rem;
+  }
+}
