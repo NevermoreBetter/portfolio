@@ -18,15 +18,22 @@ const Portfolio = ({ props }) => {
           <SwiperSlide>
             <article className="portfolio__item">
               <div className="portfolio__item-image">
-                <img src="/Assets/portfolio1.jpg" alt="" />
+                <img src="/Assets/space.jpg" alt="" />
               </div>
               <div className="portfolio__item-info">
                 <h3>This is a portfolio item title</h3>
                 <div className="portfolio-links">
-                  <a className="git" href="https://github.com/" target="_blank">
+                  <a
+                    className="git"
+                    href="https://github.com/NevermoreBetter/space-next"
+                    target="_blank"
+                  >
                     GitHub
                   </a>
-                  <a className="demo" href="https://space-sable.vercel.app/">
+                  <a
+                    className="demo"
+                    href="https://space-next-r4bb.vercel.app/"
+                  >
                     Live Demo
                   </a>
                 </div>
@@ -41,10 +48,14 @@ const Portfolio = ({ props }) => {
               <div className="portfolio__item-info">
                 <h3>This is a portfolio item title</h3>
                 <div className="portfolio-links">
-                  <a className="git" href="https://github.com/" target="_blank">
+                  <a
+                    className="git"
+                    href="https://github.com/NevermoreBetter/countries"
+                    target="_blank"
+                  >
                     GitHub
                   </a>
-                  <a className="demo" href="https://space-sable.vercel.app/">
+                  <a className="demo" href="https://countries-red.vercel.app/">
                     Live Demo
                   </a>
                 </div>
