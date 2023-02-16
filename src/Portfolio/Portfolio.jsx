@@ -30,10 +30,7 @@ const Portfolio = ({ props }) => {
                   >
                     GitHub
                   </a>
-                  <a
-                    className="demo"
-                    href="https://space-next-r4bb.vercel.app/"
-                  >
+                  <a className="demo" href="https://countries-red.vercel.app/">
                     Live Demo
                   </a>
                 </div>
@@ -43,7 +40,7 @@ const Portfolio = ({ props }) => {
           <SwiperSlide>
             <article className="portfolio__item">
               <div className="portfolio__item-image">
-                <img src="/Assets/portfolio2.jpg" alt="" />
+                <img src="/Assets/countries.jpg" alt="" />
               </div>
               <div className="portfolio__item-info">
                 <h3>This is a portfolio item title</h3>
@@ -65,15 +62,22 @@ const Portfolio = ({ props }) => {
           <SwiperSlide>
             <article className="portfolio__item">
               <div className="portfolio__item-image">
-                <img src="/Assets/portfolio3.jpg" alt="" />
+                <img src="/Assets/tracker.jpg" alt="" />
               </div>
               <div className="portfolio__item-info">
                 <h3>This is a portfolio item title</h3>
                 <div className="portfolio-links">
-                  <a className="git" href="https://github.com/" target="_blank">
+                  <a
+                    className="git"
+                    href="https://github.com/NevermoreBetter/ip-tracker"
+                    target="_blank"
+                  >
                     GitHub
                   </a>
-                  <a className="demo" href="https://space-sable.vercel.app/">
+                  <a
+                    className="demo"
+                    href="https://ip-tracker-sooty.vercel.app/"
+                  >
                     Live Demo
                   </a>
                 </div>
