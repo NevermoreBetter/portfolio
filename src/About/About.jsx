@@ -7,14 +7,14 @@ const About = ({ props }) => {
       <h5>Get To Know</h5>
       <h2>About Me</h2>
       <div className="container about__me__container flex flex-col items-center justify-around lg:flex-row lg:gap-8">
-        <div className="about__me__image bg-white w-[40%] rounded-lg ">
+        {/* <div className="about__me__image  w-[40%] rounded-lg ">
           <img
-            className=" rounded-lg  hover:rotate-0 duration-500 lg:rotate-[10deg]"
-            src="/Assets/me-about.jpg"
+            className=" rounded-lg  hover:rotate-0 duration-500 lg:rotate-[10deg] "
+            src="/Assets/avatar2.jpg"
             alt="avatar"
           />
-        </div>
-        <div className=" about__me__content  flex flex-col justify-between items-center lg:w-[40%]">
+        </div> */}
+        <div className=" about__me__content  flex flex-col justify-between items-center lg:w-[70%]">
           <div className="about__me__showcase flex flex-col gap-4 mt-4 mb-4 md:flex-row">
             <article className="me-item">
               <p>
@@ -38,7 +38,7 @@ const About = ({ props }) => {
               <small>20+ projects</small>
             </article>
           </div>
-          <p className="text-start mb-4">
+          <p className=" mb-4">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             Perspiciatis consequatur placeat dolor rerum laborum nihil nesciunt
             sequi laudantium velit, libero adipisci, molestiae a corporis iusto

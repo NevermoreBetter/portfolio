@@ -51,9 +51,11 @@
 
   .me {
     background: linear-gradient(#646cff, transparent);
-    border-top-right-radius: 17rem;
-    border-top-left-radius: 17rem;
+    border-top-right-radius: 20rem;
+    border-top-left-radius: 50rem;
     padding: 1rem 0;
+    border-bottom-left-radius: 20rem;
+    border-bottom-right-radius: 50rem;
   }
 
   .about__me__image {
@@ -88,7 +90,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    width: 50%;
     background: #535bf2;
 
     border-radius: 20px;
@@ -96,10 +98,15 @@
 
   .portfolio__item-image {
     margin-bottom: 1rem;
+    width: 100%;
+    height: 70%;
   }
 
   .portfolio__item-image img {
-    border-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 100%;
+    width: 100%;
   }
 
   .portfolio-links {
@@ -193,10 +200,18 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 3.2rem;
   line-height: 1.1;
 }
 
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #646cff;
+}
+h3 {
+  font-size: 1.5rem;
+}
 h5 {
   margin-bottom: 1rem;
 }
@@ -231,8 +246,26 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+  .portfolio__item-image {
+    width: 100%;
+
+    height: 100%;
+    margin: 0;
+  }
+  .portfolio__item-image img {
+    border-radius: 20px;
+  }
+  .portfolio__item {
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 6rem;
+  }
+  .portfolio__item-info {
+    display: none;
+  }
   .swiper {
-    width: 15rem;
+    width: 25rem;
     height: initial;
   }
 }
@@ -240,21 +273,36 @@ section {
 @media screen and (min-width: 768px) {
   .portfolio__item-image {
     width: 50%;
+    margin-bottom: 0;
+    height: 100%;
+  }
+  .portfolio__item-image img {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px;
   }
   .portfolio__item {
+    width: 100%;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
+    gap: 6rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .portfolio__item-image {
     width: 100%;
+    height: 70%;
+  }
+  .portfolio__item-image img {
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
   }
   .portfolio__item {
+    width: 50%;
     flex-direction: column;
     justify-content: flex-start;
     padding: 0 0;
+    gap: 1.5rem;
   }
 
   .swiper-slide {

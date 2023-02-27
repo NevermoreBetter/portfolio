@@ -22,8 +22,8 @@ const Header = ({ props }) => {
         </a>
       </div>
 
-      <div className="me mt-8">
-        <img src="/Assets/me.png" alt="me" />
+      <div className="me mt-10 w-[85%] mx-auto lg:w-[85%]">
+        <img className=" lg:h-[65vh]" src="/Assets/avatar.png" alt="me" />
       </div>
     </section>
   );
