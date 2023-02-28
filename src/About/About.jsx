@@ -21,7 +21,7 @@ const About = ({ props }) => {
                 <FiAward />
               </p>
               <h5>Experience</h5>
-              <small>1+ year working</small>
+              <small>1+ year experience</small>
             </article>
             <article className="me-item">
               <p>
@@ -39,10 +39,9 @@ const About = ({ props }) => {
             </article>
           </div>
           <p className=" mb-4">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis consequatur placeat dolor rerum laborum nihil nesciunt
-            sequi laudantium velit, libero adipisci, molestiae a corporis iusto
-            debitis aperiam nulla facilis quasi.
+            Developer providing services for programming and design content
+            needs. If you have any dream projects, I am more than happy to make
+            it reality.
           </p>
           <a
             href="#contact"

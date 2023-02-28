@@ -53,7 +53,7 @@ const Contact = ({ props }) => {
           <article className="contact__option">
             <AiFillLinkedin />
             <h4>LinkedIn</h4>
-            <h5>gritsanowo@gmail.com</h5>
+            <h5>Valery Gritsan</h5>
             <a
               className="contact-btn"
               href="https://www.linkedin.com/in/valery-gritsan-75ab47230/"
