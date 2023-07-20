@@ -1,5 +1,3 @@
-import CV from "/Assets/CV.pdf";
-
 const Header = ({ props }) => {
   return (
     <section id="header">
@@ -7,13 +5,13 @@ const Header = ({ props }) => {
       <h1 className="mb-5">Valeriy Gritsan</h1>
       <h5>Front-End Developer</h5>
       <div className="flex gap-7 justify-center">
-        <a
+        {/* <a
           className="about__btn hover:bg-[#535bf2] hover:text-[#242424] duration-300"
           href={CV}
           download
         >
           Download CV
-        </a>
+        </a> */}
         <a
           className="about__btn bg-[#535bf2] text-[#242424] hover:text-[#242424]"
           href="#contact"
