@@ -56,7 +56,7 @@ const Contact = ({ props }) => {
             <h5>Valery Gritsan</h5>
             <a
               className="contact-btn"
-              href="https://www.linkedin.com/in/valery-gritsan-75ab47230/"
+              href="https://www.linkedin.com/in/valeriy-gritsan/"
             >
               Send a message
             </a>
